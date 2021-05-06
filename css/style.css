@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{          /* * is used for universal changes */
+    padding: 0;
+    margin: 0;
+}
+
+.body{      /* this body is for board class */
+    background: url("../images/bg3.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SpeedBox{
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}  
+
+#scoreBox{
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}  
+
+
+#highscoreBox{
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}  
+#board{
+    background: linear-gradient(rgb(245, 82, 82),rgb(233, 233, 157));
+    width: 90vmin;      /* smaller between vh and vw is vmin */
+    height: 92vmin;     /* greater betwwwn vh and vw is vmax */
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);    /* making grid of 18 columns and 18 rows  */
+    grid-template-columns: repeat(18, 1fr);
+
+}
+
+.head{  /* head of snake */
+    background-color:rgb(224, 13, 13);
+    border:2px solid black;
+    border-radius: 9px;
+    transform: scale(1.03);
+}
+
+.snake{  /* snake body except head  */
+    background-color:purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background-color: rgb(8, 35, 187);
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
